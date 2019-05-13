@@ -1,52 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolBar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <TextView
-        android:id="@+id/textFigureTextView"
-        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
-        android:text="@string/textFigureTextView"
-        android:textSize="18sp" />
+        android:layout_marginTop="60dp"
+        android:textSize="70sp"
+        android:layout_centerHorizontal="true"
+        android:text="Ikigai" />
 
-    <TextView
-        android:id="@+id/figureTextView"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
-        android:textSize="18sp" />
+        android:text="Automatic"
+        tools:layout_editor_absoluteX="167dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        tools:layout_editor_absoluteY="397dp" />
 
-    <TextView
-        android:id="@+id/pontuationTextView"
-        android:layout_width="match_parent"
+
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_marginTop="320dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="right"
-        android:paddingRight="14sp"
-        android:text="@string/pontuationTextView" />
+        android:layout_centerHorizontal="true"
+        android:text=" Draw yourself"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="997dp" />
 
-    <fragment
-        android:id="@+id/doodleFragment"
-        android:name="br.com.bossini.fatec_ipi_tarde_paint_for_android.MainActivityFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
-</LinearLayout>
+</RelativeLayout>
